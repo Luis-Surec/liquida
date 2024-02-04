@@ -1,0 +1,29 @@
+
+.tamImagen{
+width : 40px;
+height: 60px;
+padding-block: 1%;
+
+}
+
+
+.tab  {
+    margin: 25px;
+
+}
+
+
+.col{
+    border: solid;
+    border-color: rgb(163, 196, 204);
+    border-radius: 5px;
+
+}
+
+@media screen and(max-width:200px){
+body{
+    background: rgb(181, 184, 16);
+}
+
+}
+

@@ -1,0 +1,36 @@
+/*.enviar{
+    width: 80%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: orange;
+    border:solid 10px aquamarine;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover {
+    background: rgb(105, 204, 113);
+    transform: scale(1.2) ;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}*/
+
+
+
+thead{
+color: aliceblue;
+}
+
+td, th{
+border:solid 1px;
+color: white;
+
+}
+
+.table{
+    margin: 40px 40px;
+    width:  25%;
+
+}

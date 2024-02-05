@@ -17,9 +17,9 @@ padding-block: 1%;
     border: solid;
     border-color: rgb(163, 196, 204);
     border-radius: 5px;
-
 }
 
+/*
 @media screen and(max-width:200px){
 body{
     background: rgb(181, 184, 16);

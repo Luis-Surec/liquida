@@ -6,10 +6,7 @@ fetch('listar.php')
 .then(data=>{
     let str = '';
     data.map(item => {
-        str += `
-        <option>${item.nombreUs}
-        </option>
-        `;
+        str += `<option>${item.codUs} ${item.nombreUs}</option>`;
     });
 
     document.getElementById("table_data").innerHTML = str;

@@ -1,6 +1,6 @@
 <?php
   try {
-        $conexion = new PDO("mysql:host=localhost;port=3306;dbname=sourcebd001", "root", "");      
+        $conexion = new PDO("mysql:host=localhost;port=3306;dbname=liquidaciones", "root", "");      
         $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
         $res=$conexion->query('SELECT * FROM user') or die(print($pdo->errorInfo()));

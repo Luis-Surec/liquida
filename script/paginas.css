@@ -6,7 +6,7 @@ padding-block: 1%;
 
 }
 
-
+/*
 .tab  {
     margin: 25px;
 
@@ -19,7 +19,7 @@ padding-block: 1%;
     border-radius: 5px;
 }
 
-/*
+
 @media screen and(max-width:200px){
 body{
     background: rgb(181, 184, 16);

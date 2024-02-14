@@ -1,0 +1,35 @@
+
+
+.fondoP{
+ 
+    background: linear-gradient(5deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+}
+
+
+
+.fondo2{
+    background: rgb(176, 209, 223);
+
+
+padding-top: 3%; 
+padding-left: 10%; 
+padding-bottom: 5%;
+
+}
+
+
+.fondo3{
+    background: rgb(157, 216, 186);
+    margin-top: 50pxS;   
+width: 100%;
+height: 100%; 
+}
+
+
+.c-button{
+
+    margin-top: 5%;
+    margin-left: 10%;
+width: 25%;
+height: 25%; 
+}

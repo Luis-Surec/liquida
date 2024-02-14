@@ -17,6 +17,16 @@ if(recibeClic =="usuario01"){
 
 
 
+function asignarTextoElemento(elemento, texto) {
+  let elementoHTML = document.querySelector(elemento);
+  elementoHTML.innerHTML = texto;
+  return;
+}
+
+asignarTextoElemento(p," cambiando texte desde function");
+asignarTextoElemento(h1," cambiando texte desde function");
+
+
 /*
 if(recibeClic==="usuario01"){
    //console.log(recibeClic+"***********");

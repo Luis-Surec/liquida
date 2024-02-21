@@ -21,7 +21,7 @@ if(recibeT = recibeT.replace(/e|i|a|o|u/gi, function(matched){
   let enviaDato = document.getElementById("textoEnc").innerHTML=recibeT;
   console.log( recibeT);
  } else{
-  let enviaDato = document.getElementById("textoEnc").innerHTML="no  hay mensaje";
+  let enviaDato = document.getElementById("textoEnc").innerHTML= '<img src="../img/encriptador.png">';
 console.log("no  hay mensaje");
  };
 }

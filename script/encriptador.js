@@ -1,35 +1,22 @@
+let enviaM = document.getElementById("textoEnc").innerHTML="Esperando Texto"
 function EnviarText(){
-
-  let recibeT= document.getElementById("textoRec").value;
-  let recibeProc = recibeT;
-  var constantes = {
-  e:"enter",
-  i:"imes",
-  a:"ai",
-  o:"ober",
-  u:"ufat",
-  A:"AI"
-
-};
+let recibeT= document.getElementById("textoRec").value;
+let recibeProc = recibeT;
+let constantes = {e:"enter", i:"imes", a:"ai", o:"ober", u:"ufat",   A:"AI" };
 
 if(recibeT = recibeT.replace(/e|i|a|o|u/gi, function(matched){
   return constantes[matched];
-  
- })){
-
-
+   })){
   let enviaDato = document.getElementById("textoEnc").innerHTML=recibeT;
+  let limpia =document.getElementById("textoRec");
+  
+  limpia.value =limpia.defaultValue;
   console.log( recibeT);
  } else{
-  let enviaDato = document.getElementById("textoEnc").innerHTML= src="../img/encriptador.png";
+  let inserMsg = document.getElementById("textoEnc").innerHTML="no  hay mensaje";
 console.log("no  hay mensaje");
  };
 }
-
-
-
-
-
 
 
 

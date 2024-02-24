@@ -4,27 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   
+    <link rel="icon" href="img/encript.jpg" type="image">
     <link rel="stylesheet" href="script/encriptador.css">
-    <title>encriptador</title>
+    <title>Encriptador</title>
 </head>
 <body>
-<div class="container fondoP">
-<div class="container row fondo2"> 
-<div class="col-5">
-    <textarea  class="fondo3"name="" id="encriptarTexto" cols="30" rows="10"></textarea>
+  
+<div class="container">
+<div class="d-flex">
+    <div class="encript col-6">
+        <textarea  class="encript00" name="" id="textoRec" cols="30" rows="10" placeholder="Ingrese texto a acriptar solo minusculas"></textarea>
+    </div>
+<div>
 </div>
-<div  class="col-5">
-    <textarea class="fondo4"name="" id="recibeTexto" cols="30" rows="10" value="1"></textarea>
+    <div class="encript1 col-6" clas="recImg">
+
+          <textarea class="encript11" name="textoEnc2" id="textoEnc" cols="30" rows="10"></textarea>
+      </div>
 </div>
-<div  class="c-button">
-    <button  type="submit"class="btn btn-primary" onclick="encripta()" >Encriptar</button>
-    <button class="btn btn-success"onclick="">Desencriptar</button>
+<br>
+<!--//prueba de recepcion-->
+<h3 class=" bg bg-warning">TEXTO DESENCRIPTADO</h3>
+<textarea id="textoEnc22"></textarea>
+
+
+<div>
+    <button class="btn btn-primary col-2" onclick="EnviarText()">encriptar</button>
+    <button class="btn btn-success col-2" onclick="EnviarText2()">Desencriptar</button>
 </div>
 </div>
-</div>
+
 <script src="script/encriptador.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
 </body>
 </html>

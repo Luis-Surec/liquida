@@ -1,63 +1,42 @@
-/*function encripta(){
-let  recibeDatos=document.getElementById("encriptarTexto").value;
 
-if( recibeDatos==recibeDatos ){  
-let textoCifrado =recibeDatos
-.replace(/a/gi, 'ia')
-.replace(/e/gi, 'enter')
-.replace(/i/gi, 'igls')
-.replace(/o/gi, 'ober')
-.replace(/u/gi, 'ufat')
+let enviaM = document.getElementById("textoEnc").innerHTML="Esperando Texto"
+function EnviarText(){
+let recibeT= document.getElementById("textoRec").value;
+let recibeProc = recibeT;
+let constantes = {e:"enter", i:"imes", a:"ai", o:"ober", u:"ufat",   A:"AI" };
 
-let regresaDatos= document.getElementById("recibeTexto").innerHTML=textoCifrado; 
-console.log(recibeDatos);
-}else{
-     
-  console.log("no hay mensaje recibido");
+if(recibeT = recibeT.replace(/e|i|a|o|u/gi, function(matched){
+  return constantes[matched];
+   })){
+  let enviaDato = document.getElementById("textoEnc").innerHTML=recibeT;
+  let limpia =document.getElementById("textoRec");
+    limpia.value =limpia.defaultValue;
+  console.log( recibeT);
+ } else{
+  let inserMsg = document.getElementById("textoEnc").innerHTML="no  hay mensaje";
+console.log("no  hay mensaje");
+ };
 }
+
+
+
+
+
+function EnviarText2(){
+let recibeT2= document.getElementById("textoEnc").value;
+let recibeProc2 = recibeT2;
+let constantes2 = {enter: "e", imes:"i", ai:"a", ober:"o", ufat:"u", AI:"A" };
+
+if(recibeT2 = recibeT2.replace(/enter|imes|ai|ober|ufat|AI/gi, function(matched){
+  return constantes2[matched];
+   })){
+  let enviaDato3 = document.getElementById("textoEnc22").innerHTML=recibeT2;
+  console.log("este es el texto desencripatdo"+recibeT2);
+ } else{
+  let inserMsg2 = document.getElementsByTagName("textoEnc2").innerHTML="no  hay mensaje";
+console.log("no  hay mensaje");
+ };
 }
-*/
-
-//acceder a la imagen------
 
 
-let imgMensaje = [{ 
-imagen: '../img/log.jpg'
-}
-];
-
-let imgEnvia = document.getElementById("recibeTexto")
-console.log(imgMensaje);
-
-function encripta() {
-  imgMensaje.forEach(mImagen => {
-    imgEnvia.insertAdjacentHTML('beforeend','<div class="col-lg-4">' +
-'<div align="center" color= b>'+
-          '<div>            ' + mImagen.imagen          + '  </div> ' +
-          '</div>'
-          );
-  });
-}
-document.getElementById("recibeTexto").addEventListener("click",encripta);
-
-
-
-/*
-function encripta(){
-    let  recibeDatos=document.getElementById("encriptarTexto").value;
-    let textoCifrado =recibeDatos
-    .replace(/a/gi, 'ia')
-    .replace(/e/gi, 'enter')
-    .replace(/i/gi, 'ooooo')
-    .replace(/o/gi, 'ober')
-    .replace(/u/gi, 'ufat');
-    if( document.getElementById("textoCifrado").value.length ){
-    document.getElementById("recibeDatos").value =textoCifrado;
-    let enviaDato=document.getElementById("recibeTexto").innerHTML=textoCifrado;
-    console.log(enviaDato);
-    return enviaDato
-    }
-    
-    }*/
-    
     
